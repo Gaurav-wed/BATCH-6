@@ -543,8 +543,6 @@ official images are controled by Docker core team.
 	- docker search <image-name> (Ex. jenkins)
 
 
-DAY-7:
-#
 Docker Image layers
 =========================
 - Checking the history of our docker image
