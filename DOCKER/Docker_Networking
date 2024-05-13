@@ -30,7 +30,7 @@ Docker provides several commands to manage networks. Here are some commonly used
 -------------------------
 This command is used to create a new network. You can specify the network driver, subnet, gateway, and other options as needed. 
 
-$ docker network create --driver bridge mynetwork
+$ docker network create --driver bridge mynetwork34
 
 2.docker network ls: 
 -----------------------
@@ -42,13 +42,13 @@ $ docker network ls
 ---------------------------
 This command to get detailed information about a specific network. You can provide either the network name or the network ID:
 
-$ docker network inspect mynetwork
+$ docker network inspect mynetwork34
 
 4.docker network connect: 
 --------------------------
 This command connects a container to a network. You need to specify the container name or ID and the network name:
 
-$ docker network connect mynetworks  datab
+$ docker network connect mynetwork34  dev
 
 5.docker network disconnect: 
 -----------------------------
@@ -67,11 +67,11 @@ $ docker network rm mynetwork
 
 	- First we need to create our own docker network (mynet123)
 
-		$ docker network create --subnet=172.18.0.0/16 mynet121
+		$ docker network create --subnet=172.18.0.0/16 mynetsample
 
 	- Than simply run the image (I'll take ubuntu as example)
 
-		$ docker run --name mycontainer --net mynet121 --ip 172.18.0.22 -it ubuntu /bin/bash
+		$ docker run --name mycontainer --net mynetsample --ip 172.18.0.22 -it ubuntu /bin/bash
 
 	- Then check network list 
 	
